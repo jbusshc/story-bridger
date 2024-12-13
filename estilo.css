@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face{
+  font-family: 'Poppins';
+  font-weight: 100;
+  font-style: normal;
+  src: url(/Poppins/Poppins-Thin.ttf);
+}
+
+@font-face{
+  font-family: 'Poppins';
+  font-weight: 100;
+  font-style: itlaic;
+  src: url(/Poppins/Poppins-ThinItalic.ttf);
+}
+
+@font-face{
+  font-family: 'Poppins';
+  font-weight: 200;
+  font-style: normal;
+  src: url(/Poppins/Poppins-ExtraLight.ttf);
+}
+
+@font-face{
+  font-family: 'Poppins';
+  font-weight: 200;
+  font-style: italic;
+  src: url(/Poppins/Poppins-ExtraLightItalic.ttf);
+}
+
+@font-face{
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-style: normal;
+  src: url(/Poppins/Poppins-Light.ttf);
+}
+
+@font-face{
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-style: italic;
+  src: url(/Poppins/Poppins-LightItalic.ttf);
+}
+
+@font-face{
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-style: normal;
+  src: url(/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face{
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-style: normal;
+  src: url(/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face{
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-style: italic;
+  src: url(/Poppins/Poppins-MediumItalic.ttf);
+}
+
+@font-face{
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-style: bold;
+  src: url(/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face{
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-style: bold, italic;
+  src: url(/Poppins/Poppins-SemiBoldItalic.ttf);
+}
+
+@font-face{
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-style: bold;
+  src: url(/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face{
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-style: bold, italic;
+  src: url(/Poppins/Poppins-BoldItalic.ttf);
+}
+
+@font-face{
+  font-family: 'Poppins';
+  font-weight: 800;
+  font-style: bold;
+  src: url(/Poppins/Poppins-ExtraBold.ttf);
+}
+
+@font-face{
+  font-family: 'Poppins';
+  font-weight: 800;
+  font-style: italic, bold;
+  src: url(/Poppins/Poppins-ExtraBoldItalic.ttf);
+}
+
+@font-face{
+  font-family: 'Poppins';
+  font-weight: 900;
+  font-style: bold;
+  src: url(/Poppins/Poppins-Black.ttf);
+}
+
+@font-face{
+  font-family: 'Poppins';
+  font-weight: 900;
+  font-style: bold, italic;
+  src: url(/Poppins/Poppins-BlackItalic.ttf);
+}
+
+:root[data-theme="dark"] {
+  --text: #f2ede9;
+  --background: #070503;
+  --primary: #c98231;
+  --secondary: #7c490e;
+  --accent: #bb6502;
+}
+
+:root {
+  --texto: #18130e;
+  --fondo: #fcf9f7;
+  --primario: #ce8635;
+  --secundario: #f1be84;
+  --acento: #fda645;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: transparent;
+  z-index: 0;
+}
+
+.texto-izquierda {
+  float: left;
+  margin-right: 15px;
+}
+
+h1 {
+  color: var(--texto);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+#linea-locura {
+  margin-top: 20px;
+  height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+  z-index: -1;
+}
+
+#texto-storybridger {
+  text-shadow: 1px 3px 1px var(--acento);
+  color: var(--texto);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.barra-principal {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+}
+
+.recuadro-obra {
+  padding: 50px 100px;
+  border-radius: 150px;
+  background-color:#f1be84;
+  margin: 0px 100px 50px 100px;
+  overflow: hidden;
+}
+
+#saludo-usuario {
+  color: var(--text);
+  font-weight: 400;
+  font-size: larger;
+  margin-left: 26vw;
+  margin-right: 26vw
+}
+
+#simple {
+  color: var(--texto);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: larger;
+  display:inline-block;
+  margin-left: 0.4vw;
+  margin-right: 0.4vw;
+}
+
+.imagen-obra {
+  width: 300px;
+  border-radius: 10px;
+}
+
+/* barra de búsqueda */
+
+input[id="barra-busqueda"] {
+  display:inline-block;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+/* filtro categorías */
+
+.desplegable {
+  position: absolute;
+  display: inline-block;
+}
+
+.boton-desplegable {
+  background-color: var(--acento);
+  border-style: solid;
+  border-color: var(--text);
+  border-width: 1px;
+  border-radius: 10px;
+  font-size: medium;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.contenido-desplegable {
+  border-radius: 10px;
+  display: none;
+  position: absolute;
+  min-width: 240px;
+  background-color: var(--secundario);
+  box-shadow: 0px 8px 16px 0px var(--texto);
+  z-index: 2;
+}
+
+.desplegable:hover .contenido-desplegable {
+  display: block;
+}
+
+.desplegable:hover .boton-desplegable {
+  background-color: var(--secundario);
+}
+
+
+.categoria-obra {
+  border-radius: 10px;
+  background-color: var(--primario);
+}
+
+.texto-error {
+    color: red;
+    font-weight: bold;
+}
+
+div[class="registro-grupo"]{
+    margin-top: 15px;
+    font-size: large;
+}
+
+.catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex: 0 0 30%; /* Ajusta el tamaño de las columnas según tus necesidades */
+  margin: 10px;
+  overflow: hidden;
+}
+
+.obra {
+  width: 15vw;
+  height: auto;
+  border: 1px solid #ccc; /* Añade un borde opcional para separar las imágenes */
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Estilo para la tabla */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  font-size: medium;
+}
+
+/* Estilo para las celdas de encabezado */
+th {
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  td {
+      padding: 4px;
+      margin: 2px; /* Adjust the margin value as per your requirement */
+      border: 1px solid #ccc;
+  }
+  text-align: center;
+  border: 2px solid #ccc;
+}
+
+/* Estilo para las celdas de datos */
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Estilo para las filas alternas */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+
+}
+
+/* Estilo para eliminar */
+button {
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Estilo para el botón de actualización */
+.button-actualizar {
+  background-color: rgb(117, 187, 234);
+  color: black;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+/* Estilo para el botón de eliminación */
+.button-eliminar {
+  background-color: #f57b6e;
+  color: black;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+/* Estilo para el botón de creación */
+.button-crear {
+  background-color: #6ee7a0;
+  color: black;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.mantenedor input,
+.mantenedor select,
+.mantenedor textarea {
+  width: 50%;
+  padding: 4px; /* Ajusta el relleno (padding) para aumentar el tamaño */
+  margin: 4px ;
+  box-sizing: border-box;
+}
+
+input[class="barra-formulario"] {
+  display:inline-block;
+  border: 1.5px solid var(--texto);
+  border-radius: 5px;
+  padding: 7px;
+  margin: 7px;
+}
+
+input[class="boton-formulario"] {
+  background-color: var(--acento);
+  border-style: solid;
+  border-color: var(--text);
+  border-width: 1px;
+  border-radius: 10px;
+  font-size: medium;
+  cursor: pointer;
+  padding: 8px;
+}
+
+option,
+select {
+  font-size: larger;
+  size: 200px;
+}
